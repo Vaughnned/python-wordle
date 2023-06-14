@@ -1,7 +1,7 @@
 from termcolor import colored
 import random
 
-secret_List = ["apple", "swamp", "beget", "bleed", "cause", "pitch", "trunk", "broad", "crane", "zoink"]
+secret_List = ["apple", "swamp", "beget", "drain", "cause", "pitch", "trunk", "broad", "crane", "zoink"]
 random_number = random.randint(1,10)
 secret_word = secret_List[random_number]
 attempts = 6
