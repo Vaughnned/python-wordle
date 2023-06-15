@@ -2,7 +2,7 @@ from termcolor import colored
 import random
 
 secret_List = ["apple", "swamp", "beget", "drain", "cause", "pitch", "trunk", "broad", "crane", "zoink"]
-random_number = random.randint(1,10)
+random_number = random.randint(0,9)
 secret_word = secret_List[random_number]
 attempts = 6
 win = False
@@ -92,11 +92,12 @@ while attempts > 0 and not win:
         win = True
 
     if correct_color:
-        print(colored(letter, color))
+        print(colored(letter, color), end=" ")
     if not correct_color:
-        print(colored(letter, colortwo))
+        print(colored(letter, colortwo), end=" ")
 
 if attempts == 0:
+    print()
     print("Better luck next time...")
 
 if win:
